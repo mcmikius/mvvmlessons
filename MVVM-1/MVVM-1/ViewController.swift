@@ -15,25 +15,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var sexLabel: UILabel!
     
-    var profile: Profile? {
+    var viewModel: ViewModel! {
         didSet {
-            guard let profile = profile else { return }
-            self.nameLabel.text = profile.name
-            self.secondNameLabel.text = profile.secondName
-            self.ageLabel.text = "\(profile.age)"
-            self.sexLabel.text = profile.sex
+            self.nameLabel.text = viewModel.name
+            self.secondNameLabel.text = viewModel.secondName
+            self.ageLabel.text = viewModel.age
+            self.sexLabel.text = viewModel.sex
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        profile = Profile(name: "John", secondName: "Smith", age: 33, sex: "male")
+        
+        viewModel = ViewModel()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
+    
+    
 }
 
