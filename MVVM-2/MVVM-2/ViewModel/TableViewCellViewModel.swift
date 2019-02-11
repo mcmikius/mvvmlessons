@@ -9,6 +9,9 @@
 import Foundation
 
 class TableViewCellViewModel: TableViewCellViewModelType {
+    
+    private var profile: Profile
+    
     var fullName: String {
         return profile.name + " " + profile.secondName
     }
@@ -20,6 +23,4 @@ class TableViewCellViewModel: TableViewCellViewModelType {
     init(profile: Profile) {
         self.profile = profile
     }
-    
-    private var profile: Profile
 }

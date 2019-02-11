@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var viewModel: TableViewViewModelType?
+    private var viewModel: TableViewViewModelType?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,9 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell
         
         guard let tableViewCell = cell, let viewModel = viewModel else { return UITableViewCell() }
+        
         let cellViewModel = viewModel.cellViewModel(forIndexPath: indexPath)
+        
         tableViewCell.viewModel = cellViewModel
 
         return tableViewCell
