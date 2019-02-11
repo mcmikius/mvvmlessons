@@ -25,7 +25,6 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return viewModel?.numberOfRows() ?? 0
     }
 
@@ -44,13 +43,14 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let viewModel = viewModel else { return }
         viewModel.selectRow(atIndexPath: indexPath)
+        
         performSegue(withIdentifier: "detailSegue", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier, let  viewModel = viewModel else { return }
         if identifier == "detailSegue" {
-            if let destinationViewController = segue.description as? DetailViewController {
+            if let destinationViewController = segue.destination as? DetailViewController {
                 destinationViewController.viewModel = viewModel.viewModelForSelectedRow()
             }
         }
