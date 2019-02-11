@@ -21,6 +21,7 @@
 		FB2C43002211722B0023D69E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C42FF2211722B0023D69E /* DetailViewController.swift */; };
 		FB2C4302221172C90023D69E /* DetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C4301221172C90023D69E /* DetailViewModelType.swift */; };
 		FB2C4304221178950023D69E /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C4303221178950023D69E /* DetailViewModel.swift */; };
+		FB2C4306221182AD0023D69E /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C4305221182AD0023D69E /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FB2C42FF2211722B0023D69E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FB2C4301221172C90023D69E /* DetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelType.swift; sourceTree = "<group>"; };
 		FB2C4303221178950023D69E /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		FB2C4305221182AD0023D69E /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2C42DB22115B7E0023D69E /* AppDelegate.swift */,
+				FB2C4305221182AD0023D69E /* Box.swift */,
 				FB2C42F922116B0C0023D69E /* ViewModel */,
 				FB2C42FA22116B180023D69E /* Protocols */,
 				FB2C42F4221168270023D69E /* View */,
@@ -97,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				FB2C42ED221165020023D69E /* TableViewController.swift */,
-				FB2C42F12211678A0023D69E /* TableViewCell.swift */,
 				FB2C42FF2211722B0023D69E /* DetailViewController.swift */,
+				FB2C42F12211678A0023D69E /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				FB2C42F0221165420023D69E /* Profile.swift in Sources */,
 				FB2C42EE221165020023D69E /* TableViewController.swift in Sources */,
 				FB2C42FE22116D840023D69E /* TableViewCellViewModel.swift in Sources */,
+				FB2C4306221182AD0023D69E /* Box.swift in Sources */,
 				FB2C4304221178950023D69E /* DetailViewModel.swift in Sources */,
 				FB2C42F822116A5E0023D69E /* TableViewViewModelType.swift in Sources */,
 			);
