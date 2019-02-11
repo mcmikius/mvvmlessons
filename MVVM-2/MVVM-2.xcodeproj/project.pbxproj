@@ -15,7 +15,9 @@
 		FB2C42F0221165420023D69E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C42EF221165420023D69E /* Profile.swift */; };
 		FB2C42F22211678A0023D69E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C42F12211678A0023D69E /* TableViewCell.swift */; };
 		FB2C42F6221169F30023D69E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C42F5221169F30023D69E /* ViewModel.swift */; };
-		FB2C42F822116A5E0023D69E /* TableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C42F722116A5E0023D69E /* TableViewModelType.swift */; };
+		FB2C42F822116A5E0023D69E /* TableViewViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C42F722116A5E0023D69E /* TableViewViewModelType.swift */; };
+		FB2C42FC22116CEF0023D69E /* TableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C42FB22116CEF0023D69E /* TableViewCellViewModelType.swift */; };
+		FB2C42FE22116D840023D69E /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C42FD22116D840023D69E /* TableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		FB2C42EF221165420023D69E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FB2C42F12211678A0023D69E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FB2C42F5221169F30023D69E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		FB2C42F722116A5E0023D69E /* TableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelType.swift; sourceTree = "<group>"; };
+		FB2C42F722116A5E0023D69E /* TableViewViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModelType.swift; sourceTree = "<group>"; };
+		FB2C42FB22116CEF0023D69E /* TableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelType.swift; sourceTree = "<group>"; };
+		FB2C42FD22116D840023D69E /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2C42F5221169F30023D69E /* ViewModel.swift */,
+				FB2C42FD22116D840023D69E /* TableViewCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -103,7 +108,8 @@
 		FB2C42FA22116B180023D69E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				FB2C42F722116A5E0023D69E /* TableViewModelType.swift */,
+				FB2C42F722116A5E0023D69E /* TableViewViewModelType.swift */,
+				FB2C42FB22116CEF0023D69E /* TableViewCellViewModelType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -179,12 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2C42FC22116CEF0023D69E /* TableViewCellViewModelType.swift in Sources */,
 				FB2C42F6221169F30023D69E /* ViewModel.swift in Sources */,
 				FB2C42DC22115B7E0023D69E /* AppDelegate.swift in Sources */,
 				FB2C42F22211678A0023D69E /* TableViewCell.swift in Sources */,
 				FB2C42F0221165420023D69E /* Profile.swift in Sources */,
 				FB2C42EE221165020023D69E /* TableViewController.swift in Sources */,
-				FB2C42F822116A5E0023D69E /* TableViewModelType.swift in Sources */,
+				FB2C42FE22116D840023D69E /* TableViewCellViewModel.swift in Sources */,
+				FB2C42F822116A5E0023D69E /* TableViewViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

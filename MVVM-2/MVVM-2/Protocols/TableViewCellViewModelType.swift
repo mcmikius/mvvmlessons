@@ -1,5 +1,5 @@
 //
-//  TableViewModelType.swift
+//  TableViewCellViewModelType.swift
 //  MVVM-2
 //
 //  Created by Michail Bondarenko on 2/11/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TableViewModelType {
-    var numberOfRows: Int { get }
-    var profiles: [Profile] { get }
+protocol TableViewCellViewModelType: class {
+    var fullName: String { get }
+    var age: String { get }
 }
